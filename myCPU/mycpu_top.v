@@ -18,8 +18,8 @@ module ConflictDetecter(
     input wire wen_WB,
     input wire br_taken,
     input wire reset,
-    input wire inst_ldw_Ex,
-    input wire inst_ldw_Mem,
+    input wire inst_ld_Ex,
+    input wire inst_ld_Mem,
     input wire calc_ing,
     input wire valid_ID,
 
@@ -49,7 +49,7 @@ module ConflictDetecter(
     always @(*) begin
         if(valid_ID) begin
             if((raddr1==waddr_Ex) && !(waddr_Ex==0) && valid_Ex && wen_Ex && (need_r1_r2 || need_r1)) begin
-                if(inst_ldw_Ex) begin                   //LoadUse,must stop.
+                if(inst_ld_Ex) begin                   //LoadUse,must stop.
                     stop_ID_1 = 1;
                     forward_source1 = 5'h1;
                 end else begin                          //ALU-ALU,forward
@@ -57,7 +57,7 @@ module ConflictDetecter(
                     forward_source1 = 5'h2;
                 end
             end else if((raddr1==waddr_Mem) && !(waddr_Mem==0) && valid_Mem && wen_Mem && (need_r1_r2 || need_r1)) begin
-                if(inst_ldw_Mem) begin                  //LoadUse,but can be solved by using forward
+                if(inst_ld_Mem) begin                  //LoadUse,but can be solved by using forward
                     stop_ID_1 = 0;
                     forward_source1 = 5'h4;
                 end else begin
@@ -80,7 +80,7 @@ module ConflictDetecter(
     always @(*) begin
         if(valid_ID) begin
             if((raddr2==waddr_Ex) && !(waddr_Ex==0) && valid_Ex && wen_Ex && need_r1_r2) begin  //same.
-                if(inst_ldw_Ex) begin
+                if(inst_ld_Ex) begin
                     stop_ID_2=1;
                     forward_source2 = 5'h1;
                 end else begin
@@ -88,7 +88,7 @@ module ConflictDetecter(
                     forward_source2 = 5'h2;
                 end
             end else if((raddr2==waddr_Mem) && !(waddr_Mem==0) && valid_Mem && wen_Mem && need_r1_r2) begin
-                if(inst_ldw_Mem) begin
+                if(inst_ld_Mem) begin
                     stop_ID_2 = 0;
                     forward_source2 = 5'h4;
                 end else begin
@@ -313,8 +313,8 @@ ConflictDetecter u_ConflictDetecter(
     .wen_WB       	(gr_we_WB        ),
     .br_taken     	(br_taken        ),
     .reset          (reset           ),
-    .inst_ldw_Ex    (res_from_mem_Ex ),
-    .inst_ldw_Mem   (res_from_mem_Mem),
+    .inst_ld_Ex    (res_from_mem_Ex ),
+    .inst_ld_Mem   (res_from_mem_Mem),
     .calc_ing       (calc_ing        ),
     .valid_ID       (valid_ID        ),
     .ready_go_IF  	(ready_go_IF     ),
