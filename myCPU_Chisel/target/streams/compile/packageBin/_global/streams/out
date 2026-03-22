@@ -1,0 +1,31 @@
+[0m[[0m[0mdebug[0m] [0m[0mPackaging /home/cooper/Code/Chisel/chisel-template/target/scala-2.13/-name-_2.13-0.1.0.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	code[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/cooper/Code/Chisel/chisel-template/target/scala-2.13/classes/code[0m
+[0m[[0m[0mdebug[0m] [0m[0m	code/regFile1$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/cooper/Code/Chisel/chisel-template/target/scala-2.13/classes/code/regFile1$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	code/RegFile.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/cooper/Code/Chisel/chisel-template/target/scala-2.13/classes/code/RegFile.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	code/regFile1$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/cooper/Code/Chisel/chisel-template/target/scala-2.13/classes/code/regFile1$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	code/RegFile$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/cooper/Code/Chisel/chisel-template/target/scala-2.13/classes/code/RegFile$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	code/regFile1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/cooper/Code/Chisel/chisel-template/target/scala-2.13/classes/code/regFile1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	gcd[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/cooper/Code/Chisel/chisel-template/target/scala-2.13/classes/gcd[0m
+[0m[[0m[0mdebug[0m] [0m[0m	gcd/GCD$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/cooper/Code/Chisel/chisel-template/target/scala-2.13/classes/gcd/GCD$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	gcd/GCD$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/cooper/Code/Chisel/chisel-template/target/scala-2.13/classes/gcd/GCD$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	gcd/GCD.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/cooper/Code/Chisel/chisel-template/target/scala-2.13/classes/gcd/GCD.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	gcd/GcdOutputBundle.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/cooper/Code/Chisel/chisel-template/target/scala-2.13/classes/gcd/GcdOutputBundle.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	gcd/GcdInputBundle.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/cooper/Code/Chisel/chisel-template/target/scala-2.13/classes/gcd/GcdInputBundle.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	gcd/GCD$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/cooper/Code/Chisel/chisel-template/target/scala-2.13/classes/gcd/GCD$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	gcd/DecoupledGcd.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/cooper/Code/Chisel/chisel-template/target/scala-2.13/classes/gcd/DecoupledGcd.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m
